@@ -20,3 +20,4 @@ ComponentScan nó sẽ quét và đăng kí các bean trong container @Service @
 
 # ** là css/baodeptrai/baohay/demo.css thì đều dc 
 -- trong form thì path cùng tên với thuộc tính 
+--   private final UserService userService;  final là userService không gán được giá trị
