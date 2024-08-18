@@ -16,14 +16,39 @@ import vn.hoidanit.laptopshop.service.UserService;
 public class UserController {
     private UserService userService;
 
-    public UserController(UserService userService){
+    public UserController(UserService userService) {
         this.userService = userService;
     }
 
     @RequestMapping("/")
-    public String gethomo(Model model) {
-        String test = this.userService.HandleHello();
-        model.addAttribute("bao", test);
-        return "helle";
+    public String getHomePage(Model model) {
+        String test = this.userService.handleHello();
+        model.addAttribute("eric", test);
+        model.addAttribute("hoidanit", "from controller with model");
+        return "hello";
+    }
+
+    @RequestMapping("/admin/user")
+    public String getUserPage(Model model) {
+        String test = this.userService.handleHello();
+        model.addAttribute("eric", test);
+        model.addAttribute("hoidanit", "from controller with model");
+        return "admin/user/create";
     }
 }
+
+// @RestController
+// public class UserController {
+
+// // DI : dependency injection
+// private UserService userService;
+
+// public UserController(UserService userService) {
+// this.userService = userService;
+// }
+
+// @GetMapping("")
+// public String getHomePage() {
+// return this.userService.handleHello();
+// }
+// }

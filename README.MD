@@ -17,3 +17,5 @@ ComponentScan nó sẽ quét và đăng kí các bean trong container @Service @
 # Inversion of Control (IoC) and Dependency injection (tiêm) 
 -- là 1 cách thức viết code giúp quản lý phụ thuộc từ các đối tượng. giúp linh hoạt, dễ bảo trì và mở rộng 
 ---“tightly coupled” và “loosely coupled”---
+
+# ** là css/baodeptrai/baohay/demo.css thì đều dc
